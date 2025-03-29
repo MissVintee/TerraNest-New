@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'order_page.dart'; // Import OrderPage
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -34,7 +35,10 @@ class HomePage extends StatelessWidget {
                 leading: const Icon(Icons.list),
                 title: const Text('Orders'),
                 onTap: () {
-                  // Handle navigation
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const OrderPage()),
+                  );
                 },
               ),
               ListTile(
