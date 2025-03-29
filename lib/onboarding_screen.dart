@@ -109,7 +109,7 @@ class OnboardingScreen extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue, // Temporary color for the Home button
+                        backgroundColor: Colors.deepPurpleAccent, // Temporary color for the Home button
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 30,
