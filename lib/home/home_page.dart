@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'order_page.dart'; // Import OrderPage
 import 'user_profile_page.dart'; // Import UserProfilePage
+import 'brands_page.dart'; // Import BrandsPage
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -55,6 +56,16 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const UserProfilePage()),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.store),
+                title: const Text('Brands'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BrandsPage()),
                   );
                 },
               ),
